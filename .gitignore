@@ -1,1 +1,4 @@
+dotfiles/.aws
+dotfiles/.config/configstore
+
 Brewfile.lock.json

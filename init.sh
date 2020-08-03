@@ -46,9 +46,6 @@ pushd ~/.setup &> /dev/null
     esac
   done
 
-  # set shell to bash
-  chsh -s /bin/bash
-
 popd &> /dev/null
 
 echo
