@@ -1,20 +1,12 @@
-for zsh_config in $HOME/.config/zsh/*; do
-  source $zsh_config
-done
+zstyle :compinstall filename $HOME/.zshrc
 
-autoload -Uz compinit   && compinit
 autoload -Uz promptinit && promptinit
+autoload -Uz compinit   && compinit
 
-zstyle :compinstall filename "$HOME/.zshrc"
+HISTFILE=$HOME/.histfile
+HISTSIZE=10000
+SAVEHIST=1000
 
 bindkey -e
 
-export EDITOR=nvim
-export HISTFILE=~/.histfile
-export HISTSIZE=10000
-export SAVEHIST=1000
-export LS_COLORS=exfxcxdxbxegedabagacad
-export CLICOLOR=1
-
-compinit
 prompt adam1

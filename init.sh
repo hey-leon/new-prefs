@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brew_url=https://raw.githubusercontent.com/Homebrew/install/master/install
+brew_url=https://raw.githubusercontent.com/Homebrew/install/master/install.sh
 
 # check run directory
 pushd ~/.setup &> /dev/null
@@ -10,8 +10,10 @@ pushd ~/.setup &> /dev/null
   sudo scutil --set HostName ${hostname:-macbook}
 
   # install homebrew
-  if ! type brew &> /dev/null; then
-    /usr/bin/ruby -e $(curl -fsSL ${brew_url}) # we use system ruby here
+  if ! command -v brew
+  then
+    echo "installing homebrew"
+    /bin/bash -c "$(curl -fsSL ${brew_url})"
   fi
 
   # install apps and dev tools
