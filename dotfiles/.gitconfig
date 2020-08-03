@@ -1,0 +1,9 @@
+[user]
+  name = Leon Pearce
+  email = leonp1991@gmail.com
+[core]
+  editor = $EDITOR
+[color]
+  diff = auto
+  status = auto
+  branch = auto
