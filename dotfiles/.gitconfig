@@ -2,7 +2,7 @@
   name = Leon Pearce
   email = leonp1991@gmail.com
 [core]
-  editor = $EDITOR
+  editor = code --wait
 [color]
   diff = auto
   status = auto

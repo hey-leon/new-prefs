@@ -1,5 +1,3 @@
-# used by nvm
-export NVM_DIR="$HOME/.nvm"
 
 export PATH="$PATH:/usr/local/opt/postgresql@9.6/bin"
 export PATH="$PATH:/usr/local/sbin"
@@ -13,6 +11,8 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
 fi
 
 # setup nvm
+export NVM_DIR="$HOME/.nvm"
+
 if [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ]; then
   source "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 fi
